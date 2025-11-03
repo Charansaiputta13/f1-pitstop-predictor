@@ -66,4 +66,59 @@ This project demonstrates **sports analytics**, **data preprocessing**, and **mo
 ---
 
 ## 🧾 Project Structure
+f1-pitstop-predictor/
+│
+├── app.py
+├── requirements.txt
+├── README.md
+│
+├── data/
+│ ├── raw/
+│ └── processed/
+│
+├── model/
+│ ├── pitstop_model.pkl
+│ └── scaler.pkl
+│
+├── src/
+│ ├── data_loader.py
+│ ├── feature_engineering.py
+│ ├── model_training.py
+│
+└── notebooks/
+└── exploratory_analysis.ipynb
 
+---
+
+## 🧰 Installation & Setup
+
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/<your-username>/f1-pitstop-predictor.git
+cd f1-pitstop-predictor
+```
+
+2️⃣ Create Virtual Environment
+```bash
+python -m venv .venv
+source .venv/bin/activate       # on Linux/Mac
+.venv\Scripts\activate          # on Windows
+```
+
+3️⃣ Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+4️⃣ Run Locally
+```bash
+streamlit run app.py
+```
+## ☁️ Deployment (Streamlit Cloud)
+
+You can deploy instantly via [Streamlit Cloud](https://share.streamlit.io/):
+
+1. Push this repo to GitHub  
+2. Go to **Streamlit → New app**  
+3. Select your repo & branch  
+4. Set the main file path → `app.py`  
+5. Click **Deploy**
